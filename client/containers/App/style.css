@@ -1,0 +1,88 @@
+@import 'normalize.css';
+@import 'basscss';
+@custom-media --small-viewport (max-width: 40em);
+
+html {
+  /*background-color: #11CC77;*/
+  height: 100%;
+  color: black;
+  font-size: 1rem;
+}
+
+body { font-family: var(--font-family) }
+
+h2,h3 {
+  font-family: var(--heading-font-family);
+  text-rendering: geometricPrecision;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p a       { box-shadow: inset 0 -2px 0 #ccc; } 
+
+/* p a:hover { box-shadow: inset 0 -2px 0 var(--purple); }*/
+
+h3 span,
+strong    { color: var(--purple);  }
+
+
+a:focus,
+.btn:focus,
+.flex-grid a:focus {
+  outline: none;
+  border-color: var(--purple);
+  box-shadow: 0 0 0 3px var(--purple);
+  transition: box-shadow .3s ease-out, border-color .2s ease-out;
+}
+
+.flex-grid {
+  flex: var(--flex-grid);
+  margin-right: 1rem;
+}
+
+@media (--small-viewport) {
+  .flex-grid {
+    display: block;
+    flex: none;
+    width: 100%;
+    margin-right: none;
+  }
+}
+
+.divider:before {
+  content: '';
+  display: inline-block;
+  border-top: 2px solid gray;
+  width: 4rem;
+}
+
+.h0 {
+  font-size: 32px;
+  font-family: var(--heading-font-family);
+}
+
+
+@media (--small-viewport) {
+  .h0 { font-size: 48px }
+}
+
+@media (min-width: 48em) {
+  .h0 { font-size: 64px }
+}
+
+@media (min-width: 40em) {
+  .sm-px3{
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
+  }
+}
+
+@media (min-width: 60em) {
+  .lg-px4{
+    padding-left: var(--space-4);
+    padding-right: var(--space-4);
+  }
+}

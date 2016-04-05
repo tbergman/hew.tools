@@ -1,0 +1,12 @@
+:root {
+  --font-family: -apple-system, 'Helvetica Neue', Helvetica, sans-serif;
+  --heading-font-family: 'Inconsolata', 'Courier', sans-serif;
+  --space-2: 1.5rem;
+  --space-3: 4rem;
+  --space-4: 8rem;
+  --flex-grid: 0 0 620px;
+  --button-font-size: var(--h5);
+  --purple: #B10DC9;
+  --orange: #F23205;
+  --gray: #3E3734;
+}
