@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import jax from 'jax.js'
-import Box from '../Box'
+import { Box } from '../Box'
 
-class Projects extends Component {
+class OS extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -44,4 +44,4 @@ class Projects extends Component {
 
 }
 
-export default Projects
+export default OS
