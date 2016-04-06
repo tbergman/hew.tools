@@ -2,6 +2,7 @@
 @import 'basscss';
 @custom-media --small-viewport (max-width: 40em);
 
+
 html {
   /*background-color: #11CC77;*/
   height: 100%;
@@ -11,7 +12,7 @@ html {
 
 body { font-family: var(--font-family) }
 
-h2,h3 {
+h2,h3,footer {
   font-family: var(--heading-font-family);
   text-rendering: geometricPrecision;
 }
@@ -21,7 +22,7 @@ a {
   text-decoration: none;
 }
 
-p a       { box-shadow: inset 0 -2px 0 #ccc; } 
+p a       { box-shadow: inset 0 -2px 0 #ccc; }
 
 /* p a:hover { box-shadow: inset 0 -2px 0 var(--purple); }*/
 

@@ -1,20 +1,32 @@
 import React, { Component } from 'react'
 import jax from 'jax.js'
-import { BoxSimple } from '../Box'
+import Box from '../Box'
 
 class Projects extends Component {
   constructor(props) {
     super(props)
+    this.state = {
+      parsedItems: []
+    }
+  }
+
+  componentDidMount () {
+    jax('http://hewtools.herokuapp.com/').then(response => {
+      const parsed = JSON.parse(response)
+      this.setState({ parsedItems: parsed })
+    })
+
   }
 
   render () {
-    const { data } = this.props
-    const theProjects = data.map((item, i) => {
+    const OSProjects = this.state.parsedItems.map((item, i) => {
       return (
-        <BoxSimple
+        <Box
           name={item.name}
           description={item.desc}
-          href={item.href}
+          href={item.url}
+          stars={item.stars}
+          forks={item.forks}
           key={i}
         />
       )
@@ -22,9 +34,9 @@ class Projects extends Component {
 
   return (
       <section id="projects" className="py3">
-        <h3>Projects</h3>
+        <h3>OS Tools</h3>
           <div className="sm-flex flex flex-wrap xjustify-between mxn2">
-            { theProjects }
+            { OSProjects }
           </div>
       </section>
     )

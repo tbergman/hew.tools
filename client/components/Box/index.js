@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ProjectCard = ({ href, name, description, stars, forks, ...props }) => (
+export const Box = ({ href, name, description, stars, forks, ...props }) => (
   <div className='mb2 flex-grid'>
     <a href={href}
       className='block btn inverse'
@@ -17,5 +17,14 @@ const ProjectCard = ({ href, name, description, stars, forks, ...props }) => (
   </div>
 )
 
-
-export default ProjectCard
+export const BoxSimple = ({ href, name, description, stars, forks, ...props }) => (
+  <div className='mb2 flex-grid'>
+    <a href={href}
+      className='block btn inverse'
+      title={'View ' + name}
+      >
+      <h2 className='h4'> {name} </h2>
+      <p className='regular m0'> {description} </p>
+    </a>
+  </div>
+)
