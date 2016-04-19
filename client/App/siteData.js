@@ -9,17 +9,12 @@ export const siteData = {
     {
      href: '//conversionape.com',
      name: 'Conversion Ape',
-     desc: 'Landing page design & developement'
+     desc: 'Landing page design & development'
     },
     {
       href: '//socialgirl.consulting',
       name: 'Social Girl',
       desc: 'A content & branding sweets-maker'
-    },
-    {
-      href: '//yourdispensary.website',
-      name: 'Your Dispensary',
-      desc: 'Static sites, Wordpress, Leafly API'
-    }
+    }    
   ]
 }

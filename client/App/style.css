@@ -7,7 +7,7 @@ html {
   /*background-color: #11CC77;*/
   height: 100%;
   color: black;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 body { font-family: var(--font-family) }
@@ -22,13 +22,12 @@ a {
   text-decoration: none;
 }
 
-p a       { box-shadow: inset 0 -2px 0 #ccc; }
+p a { box-shadow: inset 0 -2px 0 #ccc; }
 
 /* p a:hover { box-shadow: inset 0 -2px 0 var(--purple); }*/
 
 h3 span,
 strong    { color: var(--purple);  }
-
 
 a:focus,
 .btn:focus,
@@ -43,6 +42,8 @@ a:focus,
   flex: var(--flex-grid);
   margin-right: 1rem;
 }
+
+.sm-show { display: none }
 
 @media (--small-viewport) {
   .flex-grid {
@@ -63,15 +64,16 @@ a:focus,
 .h0 {
   font-size: 32px;
   font-family: var(--heading-font-family);
+  margin-top: 4rem; 
 }
 
-
 @media (--small-viewport) {
-  .h0 { font-size: 48px }
+  .h0 { font-size: 28px }
 }
 
 @media (min-width: 48em) {
-  .h0 { font-size: 64px }
+  .h0 { font-size: 40px }
+  .sm-show { display: initial; }
 }
 
 @media (min-width: 40em) {
