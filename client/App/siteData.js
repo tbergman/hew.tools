@@ -2,7 +2,7 @@ export const siteData = {
   source: `http://github.com/hew/hew.github.io`,
   navLinks: [
     { href: '//github.com/hew', name: 'Github' },
-    { href: '//twitter.com/hvmmus', name: 'Twitter' },
+    { href: '//twitter.com/tahini', name: 'Twitter' },
     { href: '/blog', name: 'Blog' }
   ],
   projectLinks: [
@@ -15,6 +15,6 @@ export const siteData = {
       href: '//socialgirl.consulting',
       name: 'Social Girl',
       desc: 'A content & branding sweets-maker'
-    }    
+    }
   ]
 }

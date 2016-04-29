@@ -22,7 +22,7 @@ class App extends Component {
           data={projectLinks}
           />
         <Footer
-          source={source} 
+          source={source}
           data={navLinks}
           />
       </div>
@@ -41,22 +41,22 @@ export default App
 const Who = () => (
   <section id='about' className='py2'>
     <p className='h0'>
-    Matt<strong>//</strong>hew Jones is a <br className='lg-show' />
-    designer<Str /><Str />developer </p>
+    Matt<Str />hew Jones is a <br className='lg-show' />
+    designer<Str />developer </p>
   </section>
 )
 const More = () => (
   <section id='contact' className='py2'>
     <h3>About</h3>
-    <p>I specialize in modular styles, conversion-centered design, and Javascript-y things. </p>
-    <p>( <small>&hearts;</small> ) <strong>=&gt;</strong> &#123; Babel <Str /> Node <Str /> PostCSS <Str /> React <Str /> RxJS &#125; </p>  
+    <p>I live in Vancouver.</p>
+    <p>I specialize in modular styles, conversion-centered design, and Javascript stuff.</p>
   </section>
 )
 const Nav = ({ data }) => (
   <section id='contact' className='py2'>
     <h3>Links</h3>
     { data.map((data, i) => (
-      <p key={i} className='m0 web-link'><Str /><Str /> <a href={data.href}>{data.name}</a></p>
+      <p key={i} className='m0 web-link'><Str /> <a href={data.href}>{data.name}</a></p>
     ))}
   </section>
 )
