@@ -321,17 +321,17 @@ webpackJsonp([1],[
 	    _react2.default.createElement(
 	      'p',
 	      null,
-	      'I think good design is freedom, and bad design is hell.'
+	      'I specialize in Javascript and modular style systems.'
 	    ),
 	    _react2.default.createElement(
 	      'p',
 	      null,
-	      'I solve problems for brands and browsers that strive toward freedom.'
+	      'Put simply, I think good design is freedom, and bad design is hell.'
 	    ),
 	    _react2.default.createElement(
 	      'p',
 	      null,
-	      'Currently, I live in Vancouver, Canada.'
+	      'I\'m from Vancouver, Canada.'
 	    )
 	  );
 	};

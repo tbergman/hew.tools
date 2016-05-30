@@ -44,9 +44,9 @@ const Who = () => (
 const More = () => (
   <section id='contact' className='py2'>
     <h3>About</h3>
-    <p>I think good design is freedom, and bad design is hell.</p>
-    <p>I solve problems for brands and browsers that strive toward freedom.</p>
-    <p>Currently, I live in Vancouver, Canada.</p>
+    <p>I specialize in Javascript and modular style systems.</p>
+    <p>Put simply, I think good design is freedom, and bad design is hell.</p>
+    <p>I'm from Vancouver, Canada.</p>
   </section>
 )
 const Nav = ({ data }) => (
