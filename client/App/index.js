@@ -14,17 +14,13 @@ class App extends Component {
       <div className='px2 sm-px2 lg-px4'>
         <Who />
         <More />
-        <Nav
-          data={navLinks}
-        />
+        <Nav data={navLinks} />
         <OS />
-        <Projects
-          data={projectLinks}
-          />
+        <Projects data={projectLinks} />
         <Footer
           source={source}
           data={navLinks}
-          />
+        />
       </div>
     )
   }
@@ -48,8 +44,9 @@ const Who = () => (
 const More = () => (
   <section id='contact' className='py2'>
     <h3>About</h3>
-    <p>I live in Vancouver.</p>
-    <p>I specialize in modular styles, conversion-centered design, and Javascript stuff.</p>
+    <p>I think good design is freedom, and bad design is hell.</p>
+    <p>I solve problems for brands and browsers that strive toward freedom.</p>
+    <p>Currently, I live in Vancouver, Canada.</p>
   </section>
 )
 const Nav = ({ data }) => (
