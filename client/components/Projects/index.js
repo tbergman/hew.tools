@@ -3,9 +3,6 @@ import jax from 'jax.js'
 import { BoxSimple } from '../Box'
 
 class Projects extends Component {
-  constructor(props) {
-    super(props)
-  }
 
   render () {
     const { data } = this.props

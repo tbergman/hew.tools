@@ -35,22 +35,27 @@ export default App
 
 
 const Who = () => (
-  <section id='about' className='py2'>
+  <section className='py2'>
     <p className='h0'>
     Matt<Str />hew Jones is a <br className='lg-show' />
     designer<Str />developer </p>
   </section>
 )
 const More = () => (
-  <section id='contact' className='py2'>
+  <section className='py2 about'>
     <h3>About</h3>
-    <p>I specialize in Javascript and modular style systems.</p>
-    <p>Put simply, I think good design is freedom, and bad design is hell.</p>
-    <p>I'm from Vancouver, Canada.</p>
+    <p>
+      I use code to think about web experiences, and how people fit into them. 
+      I mostly work with Javascript =&gt; React, Redux, MobX, Rx.
+    </p>
+    <p>
+      I'm passionate about functional programming, conversion and  
+      interaction design, and the future: VR, web assembly, etc.
+    </p>
   </section>
 )
 const Nav = ({ data }) => (
-  <section id='contact' className='py2'>
+  <section className='py2'>
     <h3>Links</h3>
     { data.map((data, i) => (
       <p key={i} className='m0 web-link'><Str /> <a href={data.href}>{data.name}</a></p>

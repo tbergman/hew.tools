@@ -43,6 +43,8 @@ a:focus,
   margin-right: 1rem;
 }
 
+.about { max-width: 30em }
+
 .sm-show { display: none }
 
 @media (--small-viewport) {
