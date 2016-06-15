@@ -47,6 +47,11 @@ a:focus,
 
 .sm-show { display: none }
 
+.animate {
+  opacity: 0;
+  transform: translate3d(0, 5em, 0); 
+}
+
 @media (--small-viewport) {
   .flex-grid {
     display: block;
