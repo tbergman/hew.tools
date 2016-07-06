@@ -73,7 +73,7 @@ const More = () => (
     </p>
     <p>
       I'm passionate about functional programming, conversion and  
-      interaction design, and the future.
+      interaction design, and eating hummus.
     </p>
   </section>
 )

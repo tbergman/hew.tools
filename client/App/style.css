@@ -4,7 +4,6 @@
 
 
 html {
-  /*background-color: #11CC77;*/
   height: 100%;
   color: black;
   font-size: 1.2rem;
@@ -23,8 +22,6 @@ a {
 }
 
 p a { box-shadow: inset 0 -2px 0 #ccc; }
-
-/* p a:hover { box-shadow: inset 0 -2px 0 var(--purple); }*/
 
 h3 span,
 strong    { color: var(--purple);  }
